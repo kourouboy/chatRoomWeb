@@ -149,6 +149,46 @@ public class JDBC_Demo1 {
             e.printStackTrace();
         }
     }
+
+    @Test
+    //查询操作 （select）
+    public void test6() {
+
+        //1.加载驱动(包名.类名)
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            //2.获取连接（连接数据库
+            Connection connection = (Connection) DriverManager.getConnection
+                    ("jdbc:mysql://localhost:3306/jdbc","root","123580");
+
+            //3.执行SQL
+            //要执行的语句
+            String sql = "select * from user"+ " where username = ? and password = ?";
+            //预编译
+            PreparedStatement statement = connection.prepareStatement(sql);
+            String username = "zs";
+            String password = "123";
+            statement.setString(1,username);
+            statement.setString(2,password);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()){
+                System.out.println("登陆成功");
+            }else{
+                System.out.println("登陆失败");
+            }
+
+            //5.释放资源
+            connection.close();
+            statement.close();
+            resultSet.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Test
     public void test5(){
         //加载资源
