@@ -1,23 +1,31 @@
 package com.kourou.chatroom.utils;
 
-
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-
 /**
- * created by kourou on 2019/7/30
+ * @Author： kourou
+ * @Data： 2019/8/6 14:14
+ * @Description：@Description:封装基础的工具方法,如加载配置文件、json序列化等
  */
-public class CommUtils{
-    private  CommUtils(){}
+public class CommUtils {
+    private static final Gson gson = new GsonBuilder().create();
+    private CommUtils(){}
 
-
-    public static Properties loadProperties(String fileName){
+    /**
+     * 根据指定的文件名加载配置文件
+     * @param fileName 配置文件名
+     * @return
+     */
+    public static Properties loadProperties(String fileName) {
         Properties properties = new Properties();
-        //获取当前文件的输入流
-        InputStream in = CommUtils.class.getClassLoader().getResourceAsStream(fileName);
-        //加载配置文件中的所有内容
+        // 获取当前配置文件夹下的文件输入流
+        InputStream in = CommUtils.class.getClassLoader()
+                .getResourceAsStream(fileName);
+        // 加载配置文件中的所有内容
         try {
             properties.load(in);
         } catch (IOException e) {
@@ -26,4 +34,16 @@ public class CommUtils{
         return properties;
     }
 
+    public static String object2Json(Object obj) {
+        return gson.toJson(obj);
+    }
+
+    public static Object json2Object(String jsonStr,Class objClass) {
+        return gson.fromJson(jsonStr,objClass);
+    }
+
+    public static boolean strIsNull(String str) {
+        return str == null || str.equals("");
+    }
 }
+
