@@ -7,32 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8539a3e6-3f5a-47e5-918d-4c51d7001c11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Controlle/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/Websocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/config/FreeMarkerListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/dao/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/chat.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/kourou/chatroom/dao/AccountDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e072f1ac-9cce-49b0-a7fb-5c0a5e64dd2a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e072f1ac-9cce-49b0-a7fb-5c0a5e64dd2a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/Message2Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/MessageFromClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/websocket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/utils/CommUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/utils/CommUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/kourou/chatroom/CommUtilsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/kourou/chatroom/Controlle/AccountControlle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Controlle/AccountControlle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/kourou/chatroom/Service/Websocket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/kourou/chatroom/dao/AccountDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kourou/chatroom/utils/CommUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kourou/chatroom/utils/CommUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kourou/chatroom/CommUtilsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kourou/chatroom/Controlle/AccountControlle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kourou/chatroom/Service/Websocket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kourou/chatroom/dao/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/Websocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/Websocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kourou/chatroom/Service/Websocket.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,47 +66,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/config/FreeMarkerListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Controlle/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/AccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/Websocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="-1260">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/MessageFromClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <folding>
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/Message2Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/java7_chatroom_websocket/src/main/java/com/bittech/java7/chatroom/service/WebSocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,6 +173,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Controlle/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/chat.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/config/FreeMarkerListener.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/websocket.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/Message2Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/MessageFromClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/Websocket.java" />
       </list>
     </option>
@@ -645,7 +634,7 @@
       <workItem from="1564495459100" duration="2793000" />
       <workItem from="1564757014770" duration="5766000" />
       <workItem from="1564803158108" duration="8561000" />
-      <workItem from="1565055057779" duration="23581000" />
+      <workItem from="1565055057779" duration="24942000" />
     </task>
     <servers />
   </component>
@@ -682,7 +671,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64929000" />
+    <option name="totallyTimeSpent" value="66290000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,7 +683,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.24656427" />
@@ -766,24 +755,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/1376483126/FileRecv/并发工具类.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/1376483126/FileRecv/JDK1.5新特性.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/1376483126/FileRecv/新建文本文档.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/robot2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/robot.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/file.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/bg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -963,27 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/dao/AccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1091,20 +1041,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/config/FreeMarkerListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/websocket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="960">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Controlle/LoginController.java">
+    <entry file="file://$USER_HOME$/Desktop/java7_chatroom_websocket/src/main/java/com/bittech/java7/chatroom/entity/Message2Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1121,13 +1068,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/Websocket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Controlle/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="20">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/config/FreeMarkerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/java7_chatroom_websocket/src/main/java/com/bittech/java7/chatroom/entity/MessageFromClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/Message2Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/java7_chatroom_websocket/src/main/java/com/bittech/java7/chatroom/service/WebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/entity/MessageFromClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kourou/chatroom/Service/Websocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
