@@ -3,9 +3,6 @@ package com.kourou.chatroom.Service;
 import com.bittech.java7.chatroom.entity.Message2Client;
 import com.bittech.java7.chatroom.entity.MessageFromClient;
 import com.bittech.java7.chatroom.utils.CommUtils;
-import com.kourou.chatroom.entity.Message2Client;
-import com.kourou.chatroom.entity.MessageFromClient;
-import com.kourou.chatroom.utils.CommUtils;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -17,14 +14,14 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
- * @Author: kourouya
+ * @Author: kourou？
  * @Date: 2019-08-03 11:53
  * @Description:
  */
 @ServerEndpoint("/websocket")
-public class Websocket {
+public class WebSocket {
     // 存储所有连接到后端的websocket
-    private static CopyOnWriteArraySet<Websocket> clients =
+    private static CopyOnWriteArraySet<WebSocket> clients =
             new CopyOnWriteArraySet<>();
     // 缓存所有的用户列表
     private static Map<String,String> names = new ConcurrentHashMap<>();
@@ -51,7 +48,7 @@ public class Websocket {
         message2Client.setNames(names);
         // 发送信息
         String jsonStr = CommUtils.object2Json(message2Client);
-        for (Websocket webSocket : clients) {
+        for (WebSocket webSocket : clients) {
             webSocket.sendMsg(jsonStr);
         }
     }
@@ -67,7 +64,7 @@ public class Websocket {
     public void onMessage(String msg) {
         // 将msg -> MessageFromClient
         MessageFromClient messageFromClient = (MessageFromClient) CommUtils
-                .json2Object(msg, MessageFromClient.class);
+                .json2Object(msg,MessageFromClient.class);
         if (messageFromClient.getType().equals("1")) {
             // 群聊信息
             String content = messageFromClient.getMsg();
@@ -75,7 +72,7 @@ public class Websocket {
             message2Client.setContent(content);
             message2Client.setNames(names);
             // 广播发送
-            for (Websocket webSocket : clients) {
+            for (WebSocket webSocket : clients) {
                 webSocket.sendMsg(CommUtils.object2Json(message2Client));
             }
         }else if (messageFromClient.getType().equals("2")) {
@@ -88,7 +85,7 @@ public class Websocket {
                     .substring(0,toL-1).split("-");
             List<String> lists = Arrays.asList(tos);
             // 给指定的SessionID发送信息
-            for (Websocket webSocket : clients) {
+            for (WebSocket webSocket : clients) {
                 if (lists.contains(webSocket.session.getId()) &&
                         this.session.getId() != webSocket.session.getId()) {
                     // 发送私聊信息
@@ -115,7 +112,7 @@ public class Websocket {
         message2Client.setNames(names);
         // 发送信息
         String jsonStr = CommUtils.object2Json(message2Client);
-        for (Websocket webSocket : clients) {
+        for (WebSocket webSocket : clients) {
             webSocket.sendMsg(jsonStr);
         }
     }
