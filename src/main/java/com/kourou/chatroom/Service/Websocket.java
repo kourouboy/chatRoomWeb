@@ -1,8 +1,8 @@
 package com.kourou.chatroom.Service;
 
-import com.bittech.java7.chatroom.entity.Message2Client;
-import com.bittech.java7.chatroom.entity.MessageFromClient;
-import com.bittech.java7.chatroom.utils.CommUtils;
+import com.kourou.chatroom.entity.Message2Client;
+import com.kourou.chatroom.entity.MessageFromClient;
+import com.kourou.chatroom.utils.CommUtils;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -14,12 +14,12 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
- * @Author: kourou？
+ * @Author: kourou
  * @Date: 2019-08-03 11:53
  * @Description:
  */
 @ServerEndpoint("/websocket")
-public class WebSocket {
+class WebSocket {
     // 存储所有连接到后端的websocket
     private static CopyOnWriteArraySet<WebSocket> clients =
             new CopyOnWriteArraySet<>();
@@ -29,7 +29,6 @@ public class WebSocket {
     private Session session;
     // 当前客户端的用户名
     private String userName;
-
     @OnOpen
     public void onOpen(Session session) {
         this.session = session;
